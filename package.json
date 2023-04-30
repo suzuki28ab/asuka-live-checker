@@ -4,12 +4,24 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "start": "wrangler pages dev --live-reload --kv asuka -- npm run dev",
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.3.1"
+    "@astrojs/svelte": "^2.1.0",
+    "astro": "^2.3.2",
+    "axios": "^1.4.0",
+    "hono": "^3.1.6",
+    "sass": "^1.62.1",
+    "svelte": "^3.58.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230404.0",
+    "eslint": "^8.39.0",
+    "eslint-plugin-svelte": "^2.27.1",
+    "prettier": "^2.8.8",
+    "wrangler": "^2.8.0"
   }
 }
