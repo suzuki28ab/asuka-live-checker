@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte'
-  import streamStore from '@/src/stores/liveStreamStore'
+  import streamStore from '@/stores/liveStreamStore'
   import TwitchStreams from './TwitchStreams.svelte'
   import YoutubeStreams from './YoutubeStreams.svelte'
 
@@ -10,10 +10,11 @@
 </script>
 
 <div>
-  <p class="last-updated">最終更新日時: {$streamStore.updatedAt}</p>
   {#if $streamStore.loading}
     <p>Loading...</p>
   {:else}
+    <p class="last-updated">最終更新日時: {$streamStore.updatedAt}</p>
+
     <TwitchStreams isError={$streamStore.twitch.isError} streams={$streamStore.twitch.streams} />
     <YoutubeStreams isError={$streamStore.youtube.isError} streams={$streamStore.youtube.streams} />
   {/if}

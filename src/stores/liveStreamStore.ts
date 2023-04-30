@@ -1,5 +1,5 @@
 import { writable } from "svelte/store";
-import { fetchLiveStreams } from "@/src/services/api/liveStream";
+import { fetchLiveStreams } from "@/services/api/liveStream";
 import type { LiveStream } from "../domains/LiveStream";
 
 type InitialState = LiveStream & {

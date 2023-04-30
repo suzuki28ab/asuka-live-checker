@@ -7,7 +7,7 @@
 
 <style lang="scss">
   header {
-    background-color: #6e9c8b;
+    background-color: #176432;
     padding: 1rem;
     display: flex;
     justify-content: space-between;

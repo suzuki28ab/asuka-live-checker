@@ -5,12 +5,12 @@ import Layout from '../layouts/Layout.astro'
 <Layout title="このサイトについて | アスカライブチェッカー">
   <section class="about">
     <div class="content">
-      <p>アスカ見参の生配信中のチャンネルをまとめてリスト化しています。</p>
+      <p>アスカ見参のライブ配信中のチャンネルをまとめてリスト化しているサイトです。</p>
       <p>時間があれば機能を追加していこうと思うので、要望や改善案があったら気軽に投げてください。</p>
       <h2>掲載条件について</h2>
       <ul>
         <li>
-          <p>Twitch</p>
+          <p class="twitch">Twitch</p>
           <p>
             ゲームカテゴリを<a
               href="https://www.twitch.tv/directory/game/Fushigi%20no%20Dungeon%3A%20Fuurai%20no%20Shiren%20Gaiden%20-%20Onna%20Kenshi%20Asuka%20Kenzan!"
@@ -19,7 +19,7 @@ import Layout from '../layouts/Layout.astro'
           </p>
         </li>
         <li>
-          <p>Youtube</p>
+          <p class="youtube">Youtube</p>
           <p>
             ゲームカテゴリを<a href="https://www.youtube.com/channel/UCKiKfiNPbIedOGdZOlAzCjw" target="_blank">アスカ見参</a
             >に設定している(されている)配信が対象になります。配信タイトルに「アスカ」をいれていないと、初代シレンに設定されるようです。
@@ -36,7 +36,7 @@ import Layout from '../layouts/Layout.astro'
         </li>
         <li>
           <a href="https://www.speedrun.com/shirensidestory" target="_blank">Speedrun.com(アスカ見参)</a>
-          <p>アスカ見参TAにおけるリーダーボードです。TAをやらない人でも、記録を残しておく場所として使ってもらってかまいません。</p>
+          <p>アスカ見参TAのリーダーボードです。TAをやらない人でも、記録を残しておく場所として使ってもらってかまいません。</p>
         </li>
       </ul>
       <h2>お問い合わせ</h2>
@@ -61,6 +61,16 @@ import Layout from '../layouts/Layout.astro'
     .content {
       font-size: 1.2rem;
       line-height: 1.6;
+
+      .twitch {
+        color: #9146ff;
+        font-weight: bold;
+      }
+
+      .youtube {
+        color: #ff0000;
+        font-weight: bold;
+      }
 
       a {
         color: #0066cc;

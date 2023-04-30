@@ -1,5 +1,5 @@
-import { api } from "@/src/utils/api"
-import type { LiveStream } from "@/src/domains/LiveStream"
+import { api } from "@/utils/api"
+import type { LiveStream } from "@/domains/LiveStream"
 
 export const fetchLiveStreams = async () => {
   const res = await api.get<{data: LiveStream}>('/liveStreams')
