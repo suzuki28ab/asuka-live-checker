@@ -24,8 +24,7 @@
   .platform-title {
     font-size: 20px;
     font-weight: bold;
-    text-align: center;
-    margin: 1rem 0;
+    padding: 1rem;
     color: #6e9c8b;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -42,16 +41,23 @@
   }
 
   .no-live-streams-message {
-    text-align: center;
     font-size: 1.2rem;
-    margin-top: 1rem;
+    padding: 1rem;
     color: #666;
   }
 
   .error-message {
-    text-align: center;
     font-size: 1.2rem;
-    margin-top: 1rem;
+    padding: 1rem;
     color: #ff0000;
+  }
+
+  @media (max-width: 600px) {
+    .platform-title {
+      text-align: center;
+    }
+    .no-live-streams-message {
+      text-align: center;
+    }
   }
 </style>

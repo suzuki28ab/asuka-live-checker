@@ -9,7 +9,7 @@
     display: flex;
     justify-content: flex-end;
     padding: 1rem;
-    background-color: #f1f1f1;
+    background-color: #176432;
 
     @media (min-width: 600px) {
       display: none;
@@ -18,7 +18,7 @@
     nav a {
       text-decoration: none;
       margin-left: 1rem;
-      color: #333;
+      color: #fff;
     }
 
     nav a:hover {
