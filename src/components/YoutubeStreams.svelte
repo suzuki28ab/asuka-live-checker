@@ -11,7 +11,7 @@
 {#if isError}
   <p class="error-message">エラーが発生しました。管理者へお問い合わせください。</p>
 {:else if streams.length === 0}
-  <p class="no-live-streams-message">配信中のチャンネルはありません。</p>
+  <p class="no-live-streams-message">ライブ配信中のチャンネルはありません。</p>
 {:else}
   <section class="live-streams">
     {#each streams as stream}
