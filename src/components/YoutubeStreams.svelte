@@ -9,7 +9,7 @@
 
 <h2 class="platform-title youtube">Youtube</h2>
 {#if isError}
-  <p class="error-message">エラーが発生しました。もう一度お試しください。</p>
+  <p class="error-message">エラーが発生しました。管理者へお問い合わせください。</p>
 {:else if streams.length === 0}
   <p class="no-live-streams-message">配信中のチャンネルはありません。</p>
 {:else}
